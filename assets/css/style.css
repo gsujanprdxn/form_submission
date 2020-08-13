@@ -155,6 +155,10 @@ sub { bottom: -.25em; }
   font-style: normal;
   font-weight: bold;
 }
+.wrapper{
+  width: 50%;
+  margin: auto;
+}
 
 table{
   border-collapse: collapse;
@@ -182,4 +186,8 @@ form{
   width: 500px;
   border: 1px solid black;
   margin: 10px;
+}
+
+a{
+  cursor: pointer;
 }

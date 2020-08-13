@@ -41,61 +41,78 @@
       <!--header ends here-->
       <!--main starts here-->
       <main>
-
+        <div class="wrapper">
+          <table>
+              <tr>
+                  <td>
+                      <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                          <div>
+                              <label>fistname</label>
+                              <input type="text" name="fullName" id="firstname">
+                          </div>
+                          <div>
+                              <label>Lastname</label>
+                              <input type="text" name="lastname" id="lastname">
+                          </div>
+                          <div>
+                              <label for="male">Gender</label>
+                              <input type="radio" name="male" id="male" value="male">
+                              <span for="male">Male</span>
+                              <input type="radio" name="female" id="female" value="female">
+                              <span for="female">Female</span>
+                            </div>
+                          <div>
+                              <label>Address</label>
+                              <!-- <input type="text" name="address" id="address"> -->
+                              <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                          </div>
+                          <div>
+                              <input type="checkbox" name="terms" id="terms">
+                              <label for="terms">terms and condition</label>
+                            </div>
+                          <div>
+                              <input type="submit" value="Submit">
+                              <button id="cancel" onclick="cancelform()">Cancel</button>
+                          </div>
+                          
+                      </form>
+                  </td>
+                  <tr>
+                  <td>
+                      <table class="list" id="List">
+                          <thead>
+                              <tr>
+                                  <th>firstname</th>
+                                  <th>lastname</th>
+                                  <th>address</th>
+                                  <th>gender</th>
+                                  <th>edit</th>
+                                  <th>Delete</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+      
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+              </tr>
+          </table>
+          </div>
+  
       </main>
       <!--main ends here-->
-      <form action="">
-        <div>
-          <label for="">firstname</label>
-          <input type="text" name="" id="">
-        </div>
-        <div>
-          <label for="">lastname</label>
-          <input type="text" name="" id="">
-        </div>
-        <div>
-          <label for="">salary</label>
-          <input type="radio" name="" id="" value="male">
-          <input type="radio" name="" id="" value="female">
-        </div>
-        <div>
-          <label for="">Address</label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-        </div>
-        <div>
-          <input type="checkbox" name="" id="">
-        </div>
-        <div>
-          <input type="submit" value="submit">
-          <button>cancel</button>
-        </div>
-      </form>
-      <table>
-        <tr>
-          <th>Name</th>
-          <th>Lastname</th>
-          <th>Lastname</th>
-          <th>Gender</th>
-          <th>Address</th>
-          <th>Edit</th>
-          <th>Delete</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
+     
+
+      
+      
 
       <!--footer starts here-->
       <footer>      
 
       </footer>
       <!--footer ends here-->
+    </div>
 
     </div>
     <!--container ends here-->
